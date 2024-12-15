@@ -1,0 +1,42 @@
+{
+  "name": "yolov5-tfjs",
+  "description": "Fine-Tunned yolov5 for speed-bumps",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-b-h-a-y-s-h-i-n-d-e/yolov5_speed_bumps.git"
+  },
+  "keywords": [
+    "object detection",
+    "yolov5",
+    "javascript",
+    "react",
+    "tensorflow.js"
+  ],
+  "author": "Abhay Shinde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-b-h-a-y-s-h-i-n-d-e/yolov5_speed_bumps/issues"
+  },
+  "homepage": "https://github.com/a-b-h-a-y-s-h-i-n-d-e/yolov5_speed_bumps",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.1.0",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "gh-pages": "^5.0.0",
+    "vite": "^3.2.3"
+  }
+}
