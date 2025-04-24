@@ -71,3 +71,49 @@ button:hover {
   background-color: white;
   border: 2px solid black;
 }
+
+
+
+
+.sample-downloads {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.download-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.sample-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.sample-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.download-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
