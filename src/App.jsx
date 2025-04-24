@@ -23,6 +23,11 @@ const App = () => {
   const modelName = "yolov5n";
   const classThreshold = 0.2;
 
+    const sampleImages = [
+    "sample1.jpg",
+    "sample2.jpg",
+  ];
+
   useEffect(() => {
     tf.ready().then(async () => {
       const yolov5 = await tf.loadGraphModel(
@@ -83,6 +88,31 @@ const App = () => {
       </div>
 
       <ButtonHandler imageRef={imageRef} cameraRef={cameraRef} videoRef={videoRef} />
+
+      <div className="sample-downloads">
+        <h2>Try With Sample Images</h2>
+        <p>Download a sample image below, then upload it using the buttons above 👆</p>
+        <div className="download-gallery">
+          {sampleImages.map((src, idx) => (
+            <div key={idx} className="sample-card">
+              <img
+                src={src}
+                alt={`Sample ${idx + 1}`}
+                className="sample-image"
+              />
+              <a
+                href={src}
+                download
+                className="download-btn"
+              >
+                Download Sample {idx + 1}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      
     </div>
   );
 };
